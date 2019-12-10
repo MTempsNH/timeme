@@ -1,25 +1,36 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.wear.widget.BoxInsetLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/dark_grey"
-    android:padding="@dimen/box_inset_layout_padding"
-    tools:context=".MainActivity"
-    tools:deviceIds="wear">
+    android:layout_width="match_parent"
+    android:padding="15dp">
 
     <FrameLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:padding="@dimen/inner_frame_layout_padding"
+        android:padding="5dp"
         app:boxedEdges="all">
 
         <TextView
-            android:id="@+id/text"
-            android:layout_width="wrap_content"
+            android:gravity="center"
             android:layout_height="wrap_content"
-            android:text="@string/hello_world" />
+            android:layout_width="match_parent"
+            android:text="@string/sometext"
+            android:textColor="@color/red" />
 
+        <ImageButton
+            android:id="@+id/btn_click_me"
+            android:background="@null"
+            android:layout_gravity="bottom|left"
+            android:layout_height="50dp"
+            android:layout_width="50dp"
+            android:src="@drawable/roundedbutton" />
+
+        <ImageButton
+            android:background="@null"
+            android:layout_gravity="bottom|right"
+            android:layout_height="50dp"
+            android:layout_width="50dp"
+            android:src="@drawable/roundedbutton" />
     </FrameLayout>
 </androidx.wear.widget.BoxInsetLayout>
