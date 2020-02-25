@@ -3,6 +3,7 @@ package com.example.timeme
 import android.os.Bundle
 import android.support.wearable.activity.WearableActivity
 import android.widget.ImageButton
+import android.content.Intent
 
 import android.util.Log
 
@@ -26,7 +27,10 @@ class MainActivity : WearableActivity() {
 
         // set on-click listener
         btn_click_me.setOnClickListener {
-            Log.i("001", "button clicked")
+            Log.i("001", "Navigate to new activity")
+            val intent = Intent(this, HistoryActivity::class.java)
+
+            startActivity(intent)
         }
     }
 }

@@ -3,9 +3,8 @@ package com.example.timeme
 import org.junit.Test
 
 import org.junit.Assert.*
-import android.content.Context
 
-class MainActivityTest {
+class HistoryActivityTest {
 
     @Test
     fun onCreate() {
